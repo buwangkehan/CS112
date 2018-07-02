@@ -1,0 +1,18 @@
+Kehan Wang
+wangkk@bu.edu
+
+
+
+a. str2 + " " + str1.toLowerCase()
+
+b. str1.charAt(5)
+
+c. str2.substring(6, 9)
+
+d. str2.toUpperCase().charAt(4) + str2.substring(10, 12)
+
+e. str1.substring(3, 7) + str2.toLowerCase().substring(11,12)
+
+f. str2.indexOf("E")
+
+g. str2.replace("M", "B")

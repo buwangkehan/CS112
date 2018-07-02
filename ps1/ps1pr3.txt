@@ -1,0 +1,15 @@
+Kehan Wang
+wangkk@bu.edu
+
+1.Which of these variables could be printed by the first println statement?
+Only variable a
+2.Which of them could be printed by the second println statement?
+both a,b,c,d,i,j
+3.Which of them could be printed by the third println statement?
+both a,b,c,d,i,
+4.Which of them could be printed by the fourth println statement?
+both a,b,
+5.Which of them could be printed by the fifth println statement?
+only variable x
+6.Which of them could be printed by the sixth println statement?
+both x and y
