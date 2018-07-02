@@ -1,0 +1,14 @@
+Kehan Wang
+wangkk@bu.edu
+
+1. a. non-static, because it will need to read private double points.
+
+   b. public double addExtraCredit(double amount){
+
+   c. g.addExtraCredit(30.0)
+
+2. a. non-static, because it need to reach the data under Grade object
+
+   b. public double computePercent(double pointsEarned, double possiblePoints){
+
+   c. g.computePercent(30.0, 60.0)

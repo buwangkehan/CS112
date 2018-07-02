@@ -1,0 +1,19 @@
+Kehan Wang
+wangkk@bu.edu
+
+1. 
+For the Algorithm A, 
+the best case is  O(n)
+the average case is O(n)
+the worst case is O(n)
+because it searches the array sequentially, it needs n operations
+
+2.
+For the algorithm B,
+the best case is O(n log n)
+the avg case is O(n log n)
+the worst case is O(n log n)
+because the algorithm B is a merge sort, and merg sor t is a divide and conquer algorithm 
+
+3. 
+algorithm B will be faster, because merge sort has faster sorting speed with a worst case complexity O(nlogn)

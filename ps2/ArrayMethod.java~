@@ -1,0 +1,34 @@
+/*
+ * Problem Set 2, Problem 5
+ *
+ * Practice with static methods, part I
+ *
+ * Note: Because this class is simply a collection of static methods 
+ * and it does not have a main method, you cannot run it.
+ * See the problem set for instructions about how to test the methods 
+ * that you write.
+ */
+
+public class ArrayMethod{
+  public static void swapAdjacent(int[] values){
+    int[] other = new int[values.length];
+    int length = values.length;
+    if(values == null){
+      System.out.println("IllegalArgumentException.");
+    }
+    if(length%2==1){
+      for(i=0; i<length-1; i+=2){
+        other[i] = values[i+1];
+        other[i+1] =values[i];
+        other[length] = values[length];}
+    }
+    else{
+      for(i=0;i<length; i +=2){
+        other[i] = values[i+1];
+        other[i+1] =values[i];}
+      System.out.println(other);
+    }}}
+        
+        
+        
+        

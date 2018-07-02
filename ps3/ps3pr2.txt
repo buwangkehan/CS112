@@ -1,0 +1,45 @@
+Kehan Wang
+wangkk@bu.edu
+
+1. toString() comes from Object class because all classes in java is actually subclass under Object classs
+
+2. String bar, int x, int y, int z
+
+3.  
+              |              | will the call | if the call compiles,   
+  which print | which method | compile       | which version of the    
+  statement   | is called    | (yes/no)?     | method will be called?  
+=======================================================================
+| first one   | equals()     | yes           | the Tee version        |
++-------------+--------------+---------------+------------------------+
+| second one  | foo()        | yes           | the Gee version        |
++-------------+--------------+---------------+------------------------+
+| third one   | toString()   | Yes           | the Gee version        |
++-------------+--------------+---------------+------------------------+
+| fourth one  |  no          |  no           |  no                    |
++-------------+--------------+---------------+------------------------+
+
+
+4.
+class Yee{
+.....
+
+ public int Yow(){
+	int sum = super.getX() + super.getY() + z;
+	return sum
+ 
+
+
+
+5.
+    Yee y = new Tee();
+
+    Zee z = new Gee();
+
+    Tee t = new Zee();
+
+    Gee g = new Tee();
+a. allowed, because "Class Tee extends Yee", the subclass can reach the reference of super class.
+b. not allowed, because "Class Zee extends Gee.", Gee is the superclass of Zee. 
+c. not allowed, because there is no connection between Tee and Zee class
+d. allowed, because Tee is one of subclass of Gee

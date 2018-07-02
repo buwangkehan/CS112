@@ -1,0 +1,16 @@
+wangkk@bu.edu
+Kehan Wang
+
+1. twoD[1][2] = 12
+
+2. 
+
+for(i = 0; i<twoD.length; i++){
+	System.out.println(twoD[i][0])}
+
+3. 
+for(i = twoD.length; i>=0;i--){
+	for(j = 0; j<twoD[i].length; i++){
+		System.out.println(twoD[i][j])
+}}
+	

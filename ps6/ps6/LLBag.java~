@@ -1,0 +1,33 @@
+/*
+ * LLbag.java
+ * write a class called LLBag that implements 
+ * the Bag interface using a linked list instead of an array
+ * Kehan Wang
+ * wangkk@bu.edu.**/
+
+import java.util.*;
+
+public class LLBag implements Bag {
+    private class Node {
+        private Object item;
+        private Node next;
+        
+        private Node(Object i, Node n) {
+            item = i;
+            next = n;
+        }
+    }
+    /*
+     * fields of the LLBag object
+     */
+    private Node head;
+    private int numItems;
+    
+    /*
+     * Construct a LLBag object for a bag that is orginally empty
+     */
+    public LLBag() {
+        head = new Node(null, null);
+        numItems = 0;
+    }
+}

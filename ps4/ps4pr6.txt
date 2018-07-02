@@ -1,0 +1,30 @@
+n              
+
+1000    516966 comparisons	      82722 moves
+1000	516966 comparisons	      88326 moves
+1000	516966 comparisons	      92913 moves
+1000	516966 comparisons	      90117 moves
+	516966 comparisons	      84834 moves
+	516966 comparisons	      98040 moves
+	516966 comparisons	      96516 moves
+ 	516966 comparisons	      95715 moves
+ 	516966 comparisons	      89376 moves
+  	516966 comparisons	      93534 moves
+
+Avg:91209.3 moves
+
+
+2000	2059919 comparisons	     352611 moves
+ 	2059919 comparisons	     327285 moves
+ 	2059919 comparisons	     345477 moves
+ 	2059919 comparisons	     323514 moves
+	2059919 comparisons	     321003 moves
+	2059919 comparisons	     327000 moves
+	2059919 comparisons	     322041 moves
+	2059919 comparisons	     371196 moves
+	2059919 comparisons	     323247 moves
+	2059919 comparisons	     347136 moves
+
+Avg:336051 moves
+
+5000

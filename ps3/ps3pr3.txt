@@ -1,0 +1,42 @@
+Kehan Wang
+wangkk@bu.edu
+
+1. printPattern(1, 4):
+	System.out.println("(")
+	printPattern(2, 4):
+		System.out.println("(")
+		printPattern(3,4):
+			System.out.println("(")
+			printPattern(4,4):
+				return.
+			System.out.Println("\\")
+		System.out.println("\\")
+	System.out.println("\\")
+   so the final output is:
+(
+(
+(
+\
+\
+\
+
+2. 
+No infinite recursion, 
+because whatever number you put in, it will eventually be same number, and reach the base case when two numbers are same.
+
+3. 
+  public static void printPattern2(int m, int n){
+    if(m == n){
+      return;
+    }
+    if(m<n){
+      System.out.println("(");
+      printPattern2(m + 1, n);
+      System.out.println("\\");     /* prints a single backslash */
+    }
+    else{
+      System.out.println(")");
+      printPattern2(m, n + 1);
+      System.out.println("/");
+    }
+  }

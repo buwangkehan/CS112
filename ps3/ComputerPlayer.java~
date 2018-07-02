@@ -1,0 +1,55 @@
+import java.util.*;
+
+
+/**
+ *
+ * ComputerPlayer.java
+ * 
+ * Computer Science 112
+ */
+/* extends from Player class*/
+public class ComputerPlayer extends Player{
+  
+  /** own constructor, which should take the name of the player as its only parameter.**/
+  public ComputerPlayer(String name){
+    super(name); 
+  }
+  /**the method should simply print the number of cards in the ComputerPlayer¡®s hand.**/
+  public void printHand(){
+    if(this.getNumCards() == 1){
+      System.out.println(this.getName() +"'s hand: " + " " + this.getNumCards() + " " + "card");
+    }
+    else{
+      System.out.println(this.getName() +"'s hand: " + " " + this.getNumCards() + " " + "cards");
+    }
+  }
+  public int getPlay(Scanner scan, Card other){
+    Card[] temp = new Card[Buno.MAX_CARDS];
+    for(int i = 0; i <this.getNumCards();i++){
+      temp[i] = this.getCardFromHand(i);
+    }
+    int temp1 = 0;
+    int match = 0;
+    
+    for(int i=0;i< this.getNumCards();i++){
+      if(temp[i].getColor().equals(other.getColor())){
+        if(temp[i].getValue() > temp1){
+          temp1 = i;
+        }
+      }
+      if(temp[i].matches(other) == false){
+        match++;
+      }
+      if(temp[i].getValue() == other.getValue()){
+        return i;
+      }
+    }
+    if(this.getNumCards() == match){
+      return -1;
+    }
+    return temp1;
+  }
+  
+}
+
+

@@ -1,0 +1,40 @@
+wangkk@bu.edu
+Kehan Wang
+
+1. 
+a.    
+   public Participant(String name, int age) {
+       setName(name);
+       setAge(age);
+   }
+b.
+   public String getName() {
+       return name;
+   }
+
+   public int getAge() {
+       return age;
+   }
+
+c. 
+   public void setName(String name) {
+       if (name == null) {
+           throw new IllegalArgumentException();
+       }
+       this.name = name;
+   }
+
+   public void setAge(int age) {
+       if (age < 0) {
+           throw new IllegalArgumentException();
+       }
+       this.age = age;
+   }
+
+2.
+public class ParticipantClient {
+
+   public static void main(String[] args) {
+	a. Participant qb = new Participant("Tom Brady", 35);
+	b. qb.setAge(40);
+	c. String mvp = qb.getName();

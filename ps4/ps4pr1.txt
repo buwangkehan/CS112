@@ -1,0 +1,27 @@
+Kehan Wang
+wangkk@bu.edu
+
+
+1.
+                                 1:foo(5,3)
+                                /          \
+                               /            \
+                              /              \
+                  2:result1 = foo(4,2)    7:result2 = foo(4,4)
+                  /          \                    |     
+                 /            \                   |
+                /              \                  |
+          3:foo(3,1)       4:foo(3,3)             4
+          /          \          |        
+      5:foo(2,0)   6:foo(2,2)   3        
+          |            |
+          2            2
+2.
+call 5(foo(2,0)) return 2
+call 6(foo(2,0)) return 2
+call 3(foo(3,1)) return 4
+call 4(foo(3,3)) return 3
+call 2(foo(4,2)) return 7
+call 7(foo(4,4)) return 4
+call 1(foo(5,3)) return 11 
+

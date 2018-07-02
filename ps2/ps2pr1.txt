@@ -1,0 +1,19 @@
+Kehan Wang
+wangkk@bu.edu
+
+1.  12 10 10 
+because int[] c = b and int [] b share a same sequence of intergers. when it calls c[3] = 10, int[] b will change at same time.
+so b[3] = c[3] = 10, output will be 12 10 10
+
+2.  
+ mystery's variables
+  i  |  n  | val | arr 
+-------------------------------------------
+  -  |  -  |  -  | {0, 1, 2, 3, 4, 5, 6, 7}
+  0  |  7  |  7  | {7, 1, 2, 3, 4, 5, 6, 0}
+  1  |  5  |  5  | {7, 6, 2, 3, 4, 5, 1, 0}
+  2  |  4  |  4  | {7, 6, 5, 3, 4, 2, 1, 0}
+  3  |  3  |  3  | {7, 6, 5, 4, 3 ,2 ,1, 0}
+
+3. we will see the changed made by the call to the mystery().because after run mystery, all changes have been saved in the arr, so the new
+string (changed made by the call to the mystery()) will be printed, if we run System.out.println(Arrays.toString(values));

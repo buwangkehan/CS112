@@ -1,0 +1,51 @@
+/**
+ * Name:Kehan Wang
+ * email:wangkk@bu.edu
+ * takes two arrays of integers as parameters and uses an approach based on merging to find and return the intersection of the two arrays
+ */
+
+import java.util.*;
+
+public class MergeIntersect {
+  /*Return the intersection of two arrays A and B by merging.*/
+  public static int[] intersect(int[] A, int[] B) {
+    /*Get the minimum length. */
+    int Intersect_length = A.length;
+    if (B.length < Intersect_length) {
+      Intersect_length = B.length;
+    }
+    /*Sort two array A and B.*/
+    Sort.quickSort(A);
+    Sort.quickSort(B);
+    /*Create New array.*/
+    int Intersect[] = new int[Intersect_length];
+    int i = 0, j = 0, n = 0;
+    /*get the intersection by merging. */
+    while ((i < A.length) && (j < B.length)) {
+      if (A[i] > B[j]) {
+        j++;
+      } 
+      else if(A[i] == B[j]) {
+        Intersect[n] = A[i];
+        n++;
+        i++;
+        j++;
+      } 
+      else {
+        i++;
+      }
+    }
+    return Intersect;
+  }
+  public static void main(String args[]) {
+    /*Test. */
+    int[] a1 = {10, 5, 7, 5, 9, 4};
+    int[] a2 = {7, 5, 15, 7, 7, 9, 10};
+    int[] result = intersect(a1, a2);
+    System.out.println(Arrays.toString(result));
+    int[] a3 = {0, 2, -4, 6, 10, 8};
+    int[] a4 = {12, 0, -4, 8};
+    result = intersect(a3, a4);
+    System.out.println(Arrays.toString(result));
+  }
+}

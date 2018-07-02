@@ -1,0 +1,26 @@
+Kehan Wang
+wangkk@bu.edu
+
+
+1. 
+n(n+1)/2
+
+2.
+O(n**2)
+in this algorthm, it grows lagrger and larger than the previous terms, this algorthm will grows propotionallly to n**2.
+
+
+3.
+public static void generateSums(int n) {
+	int sum = 0;
+	for (int i = 1; i<= n; i++){
+		sum += n;
+		Susye.out.println(sum);
+	}
+}
+
+4.
+The time efficiency will be n.
+The Big-O notation is O(n)
+and this algorthm grows graudally to n.
+
