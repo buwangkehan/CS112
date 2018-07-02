@@ -1,0 +1,19 @@
+Kehan Wang
+wangkk@bu.edu
+
+1.
+Any node at index i, has left child 2*i +1, right child 2*i+2. so left child at 101, and right child at 102.
+For parent node, for node at index, we can use (i+1)/2 to find the nearest interger, so node at index 50, its parent index should be 24.
+
+2.
+Any height of tree should have totally 2^h-1 nodes. Hence when at index 50, 50 = 2^h -1; h = 7.
+
+3.
+The rightmost leaf node in the bottom level is the left child of its parents.
+to determine is a right or left child, check the total # of leaf node is even or odd.
+In this problem, 200-127 = 73, is a odd, so left child.
+
+
+4.
+In best case, in first ieration, when the child are greater than root, it directly return false, so the time effiency should be O(1)
+In worst case, it will run (n-2)/2 times to check the value, so time effiency is O(n)
